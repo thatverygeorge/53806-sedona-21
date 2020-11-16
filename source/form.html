@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="header__logo">
+      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип туристического городка Седона">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a href="">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a href="">HTML Academy</a>
+        </li>
+      </ul>
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+    <div class="header__image header__image--inner">
+      <img src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Форма отзыва</h1>
+
+    <section class="review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__description">
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+      <form class="form review__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Представьтесь:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="input-name">Имя*:</label>
+              <input class="form__input" id="input-name" type="text" name="name" placeholder="Петр" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="input-surname">Фамилия*:</label>
+              <input class="form__input" id="input-surname" type="text" name="surname" placeholder="Иванов" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="input-patronymic">Отчество:</label>
+              <input class="form__input" id="input-patronymic" type="text" name="patronymic"
+                placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Контактная информация:</legend>
+          <ul class="form__list">
+            <li class="form__item form__item--not-inline">
+              <label class="form__label" for="input-phone">Контактный телефон*:</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" id="input-phone" type="tel" name="phone" placeholder="Введите телефон"
+                  required>
+                <div class="form__icon form__icon--phone"></div>
+              </div>
+            </li>
+            <li class="form__item form__item--not-inline">
+              <label class="form__label" for="input-email">Электронная почта*:</label>
+              <div class="form__input-wrapper">
+                <input class="form__input" id="input-email" type="email" name="email" placeholder="Введите e-mail"
+                  required>
+                <div class="form__icon form__icon--email"></div>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="impression-positive">Скорее положительное</label>
+              <input class="form__input form__input--radio" id="impression-positive" type="radio" name="impression"
+                value="positive" checked>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="impression-negative">Скорее отрицательное</label>
+              <input class="form__input form__input--radio" id="impression-negative" type="radio" name="impression"
+                value="negative">
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="impression-can-not-tell">Затрудняюсь ответить</label>
+              <input class="form__input form__input--radio" id="impression-can-not-tell" type="radio" name="impression"
+                value="can-not-tell">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Посещенные достопримечательности:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="attractions-devils-bridge">Мост Дьявола</label>
+              <input class="form__input form__input--checkbox" id="attractions-devils-bridge" type="checkbox"
+                name="devils-bridge" checked>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="attractions-bell-mountain">Гора-Колокол</label>
+              <input class="form__input form__input--checkbox" id="attractions-bell-mountain" type="checkbox"
+                name="bell-mountain" checked>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="attractions-slide-park">Слайд-парк</label>
+              <input class="form__input form__input--checkbox" id="attractions-slide-park" type="checkbox"
+                name="slide-park" checked>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="attractions-red-rocks">Красные скалы</label>
+              <input class="form__input form__input--checkbox" id="attractions-red-rocks" type="checkbox"
+                name="red-rocks">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Опишите свои эмоции:</legend>
+          <textarea class="form__input form__input--textarea" id="input-textarea" name="emotions"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form__submit button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">#visitsedona</p>
+    <ul class="social footer__social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="" target="_blank">Твиттер</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="" target="_blank">Фейсбук</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="" target="_blank">Ютуб</a>
+      </li>
+    </ul>
+    <div class="copyright footer__copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+        aria-label="Cсылка на страницу онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal modal--error">
+    <h2 class="modal__title">Что-то пошло не так!</h2>
+    <p class="modal__description">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="modal__close button" type="button">ОК</button>
+  </section>
+
+  <section class="modal modal--success">
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <p class="modal__description">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+      его на сайте.
+    </p>
+    <div class="modal__button-wrapper">
+      <button class="modal__close button" type="button">Закрыть окно</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
