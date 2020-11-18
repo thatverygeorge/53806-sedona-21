@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="header__logo">
+      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип туристического городка Седона">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a href="">HTML Academy</a>
+        </li>
+      </ul>
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+    <div class="header__image header__image--inner">
+      <img src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Галерея фото и видео</h1>
+
+    <section class="catalog">
+      <h2 class="catalog__title">Фото и видео</h2>
+      <p class="catalog__description">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+      <ul class="gallery catalog__gallery">
+        <li class="gallery__item gallery__item--spaces">
+          <h3 class="gallery__title">Неродные просторы</h3>
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+              alt="Фотография дороги, уходящей в даль, сделанная на закате">
+          </a>
+          <p class="author gallery__author">Автор фото: <span class="author__name">Борис</span></p>
+          <p class="gallery__likes">1350</p>
+        </li>
+        <li class="gallery__item gallery__item--vegetation">
+          <h3 class="gallery__title">Местная растительность</h3>
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+              alt="Фотография кактуса крупным планом">
+          </a>
+          <p class="author gallery__author">Автор фото: <span class="author__name">Сергей</span></p>
+          <p class="gallery__likes">143</p>
+        </li>
+        <li class="gallery__item gallery__item--road-to-the-north">
+          <h3 class="gallery__title">Дорога на север</h3>
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+              alt="Фотография извилистой горной дороги, окружённой деревьями">
+          </a>
+          <p class="author gallery__author">Автор фото: <span class="author__name">Петр</span></p>
+          <p class="gallery__likes">96</p>
+        </li>
+        <li class="gallery__item gallery__item--devils-bridge">
+          <h3 class="gallery__title">Мост дьявола</h3>
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+              alt="Фотография Моста дьявола">
+          </a>
+          <p class="author gallery__author">Автор фото: <span class="author__name">Антон</span></p>
+          <p class="gallery__likes">254</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="presentation">
+      <h2 class="visually-hidden">Презентация</h2>
+      <p class="presentation__title">Все еще сомневаетесь?</p>
+      <p class="presentation__description">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <video class="presentation__video" poster="https://via.placeholder.com/320x201" width="320" height="201">
+        <source src="" type="">
+      </video>
+      <div class="video-controls presentation__video-controls">
+        <div class="progress video-controls__progress">
+          <div class="progress__bar"></div>
+          <div class="progress__toggle"></div>
+        </div>
+        <div class="video-controls__button-wrapper">
+          <button class="video-controls__button video-controls__button--repeat" aria-label="Повторить"></button>
+          <button class="video-controls__button video-controls__button--subtitles" aria-label="Субтитры"></button>
+          <button class="video-controls__button video-controls__button--full-screen"
+            aria-label="Во весь экран"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">#visitsedona</p>
+    <ul class="social footer__social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="" target="_blank">Твиттер</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="" target="_blank">Фейсбук</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="" target="_blank">Ютуб</a>
+      </li>
+    </ul>
+    <div class="copyright footer__copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+        aria-label="Cсылка на страницу онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
