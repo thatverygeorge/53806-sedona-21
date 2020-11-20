@@ -1,0 +1,18 @@
+.features__list {
+  padding: 35px 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  width: auto;
+  padding-left: 50px;
+}
+
+.features__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+}

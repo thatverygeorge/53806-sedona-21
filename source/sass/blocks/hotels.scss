@@ -1,0 +1,34 @@
+.hotels__wrapper {
+  width: auto;
+  margin: auto;
+  padding: 33px 20px;
+}
+
+.hotels__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.hotels__descritpion {
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotels__find {
+  margin-bottom: 16px;
+}
+
+.hotels__map {
+  width: 320px;
+  height: 350px;
+  margin: auto;
+  background-image: url("./../img/map.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $gray;
+}

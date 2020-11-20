@@ -1,0 +1,16 @@
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation__item a {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+}
