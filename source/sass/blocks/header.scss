@@ -11,6 +11,11 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: $gray;
+
+  &--inner {
+    padding-top: 52px;
+    padding-bottom: 57px;
+  }
 }
 
 .header__image img {
