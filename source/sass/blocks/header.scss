@@ -11,8 +11,8 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: $gray;
-}
 
-.header__image img {
-  background-color: darken($gray, 20%);
+  img {
+    background-color: darken($gray, 20%);
+  }
 }
