@@ -1,0 +1,18 @@
+.header__navigation {
+  margin-bottom: 56px;
+}
+
+.header__image {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-image: url("./../img/header-image.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $gray;
+
+  img {
+    background-color: darken($gray, 20%);
+  }
+}

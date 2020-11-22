@@ -45,41 +45,41 @@
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
       </p>
       <ul class="gallery catalog__gallery">
-        <li class="gallery__item gallery__item--spaces">
-          <h3 class="gallery__title">Неродные просторы</h3>
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+        <li class="photo-card gallery__item">
+          <h3 class="photo-card__title">Неродные просторы</h3>
+          <a class="photo-card__link" href="">
+            <img class="photo-card__image" src="https://via.placeholder.com/280x280" width="280" height="280"
               alt="Фотография дороги, уходящей в даль, сделанная на закате">
           </a>
-          <p class="author gallery__author">Автор фото: <span class="author__name">Борис</span></p>
-          <p class="gallery__likes">1350</p>
+          <p class="author photo-card__author">Автор фото: <span class="author__name">Борис</span></p>
+          <p class="photo-card__likes">1350</p>
         </li>
-        <li class="gallery__item gallery__item--vegetation">
-          <h3 class="gallery__title">Местная растительность</h3>
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+        <li class="photo-card gallery__item">
+          <h3 class="photo-card__title">Местная растительность</h3>
+          <a class="photo-card__link" href="">
+            <img class="photo-card__image" src="https://via.placeholder.com/280x280" width="280" height="280"
               alt="Фотография кактуса крупным планом">
           </a>
-          <p class="author gallery__author">Автор фото: <span class="author__name">Сергей</span></p>
-          <p class="gallery__likes">143</p>
+          <p class="author photo-card__author">Автор фото: <span class="author__name">Сергей</span></p>
+          <p class="photo-card__likes">143</p>
         </li>
-        <li class="gallery__item gallery__item--road-to-the-north">
-          <h3 class="gallery__title">Дорога на север</h3>
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+        <li class="photo-card gallery__item">
+          <h3 class="photo-card__title">Дорога на север</h3>
+          <a class="photo-card__link" href="">
+            <img class="photo-card__image" src="https://via.placeholder.com/280x280" width="280" height="280"
               alt="Фотография извилистой горной дороги, окружённой деревьями">
           </a>
-          <p class="author gallery__author">Автор фото: <span class="author__name">Петр</span></p>
-          <p class="gallery__likes">96</p>
+          <p class="author photo-card__author">Автор фото: <span class="author__name">Петр</span></p>
+          <p class="photo-card__likes">96</p>
         </li>
-        <li class="gallery__item gallery__item--devils-bridge">
-          <h3 class="gallery__title">Мост дьявола</h3>
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
+        <li class="photo-card gallery__item">
+          <h3 class="photo-card__title">Мост дьявола</h3>
+          <a class="photo-card__link" href="">
+            <img class="photo-card__image" src="https://via.placeholder.com/280x280" width="280" height="280"
               alt="Фотография Моста дьявола">
           </a>
-          <p class="author gallery__author">Автор фото: <span class="author__name">Антон</span></p>
-          <p class="gallery__likes">254</p>
+          <p class="author photo-card__author">Автор фото: <span class="author__name">Антон</span></p>
+          <p class="photo-card__likes">254</p>
         </li>
       </ul>
     </section>
@@ -90,20 +90,24 @@
       <p class="presentation__description">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="presentation__video" poster="https://via.placeholder.com/320x201" width="320" height="201">
-        <source src="" type="">
-      </video>
+      <img class="presentation__video" src="https://via.placeholder.com/320x201" width="320" height="201"
+        alt="Превью ролика с машинами на дороге посреди каньона">
       <div class="video-controls presentation__video-controls">
         <div class="progress video-controls__progress">
           <div class="progress__bar"></div>
           <div class="progress__toggle"></div>
         </div>
-        <div class="video-controls__button-wrapper">
-          <button class="video-controls__button video-controls__button--repeat" aria-label="Повторить"></button>
-          <button class="video-controls__button video-controls__button--subtitles" aria-label="Субтитры"></button>
-          <button class="video-controls__button video-controls__button--full-screen"
-            aria-label="Во весь экран"></button>
-        </div>
+        <ul class="buttons-list video-controls__buttons-list">
+          <li class="buttons-list__item">
+            <button class="buttons-list__button buttons-list__button--repeat" aria-label="Повторить"></button>
+          </li>
+          <li class="buttons-list__item">
+            <button class="buttons-list__button buttons-list__button--subtitles" aria-label="Субтитры"></button>
+          </li>
+          <li class="buttons-list__item">
+            <button class="buttons-list__button buttons-list__button--full-screen" aria-label="Во весь экран"></button>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
