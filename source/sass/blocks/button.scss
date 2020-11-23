@@ -1,9 +1,9 @@
 .button {
   display: block;
-  width: auto;
+  width: 100%;
   max-width: 458px;
   margin: auto;
-  padding: 14px 32px 18px;
+  padding: 14px 20px 18px;
   background-color: $blue;
   font-size: 21px;
   line-height: 26px;
@@ -11,4 +11,6 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  border: none;
+  outline: none;
 }

@@ -12,6 +12,12 @@
   background-repeat: no-repeat;
   background-color: $gray;
 
+  &--inner {
+    padding-top: 52px;
+    padding-bottom: 57px;
+    background-position: 0 bottom;
+  }
+
   img {
     background-color: darken($gray, 20%);
   }

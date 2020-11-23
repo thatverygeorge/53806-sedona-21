@@ -1,0 +1,40 @@
+.modal {
+  &--error {
+    padding: 40px 20px 20px 20px;
+  }
+}
+
+.modal__wrapper {
+  padding: 30px 20px 20px 20px;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.modal__description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__button-wrapper {
+  padding: 20px;
+  background-color: $light-gray;
+}
+
+.modal__close {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.modal--error .modal__close {
+  width: 180px;
+  margin-bottom: 15px;
+}
