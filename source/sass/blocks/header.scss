@@ -15,9 +15,10 @@
   &--inner {
     padding-top: 52px;
     padding-bottom: 57px;
+    background-position: 0 bottom;
   }
-}
 
-.header__image img {
-  background-color: darken($gray, 20%);
+  img {
+    background-color: darken($gray, 20%);
+  }
 }
