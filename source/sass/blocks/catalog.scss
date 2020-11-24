@@ -1,0 +1,19 @@
+.catalog {
+  padding: 31px 20px 0;
+}
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.catalog__description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}

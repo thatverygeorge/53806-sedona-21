@@ -8,14 +8,14 @@
   padding-top: 90px;
   padding-bottom: 85px;
   background-image: url("./../img/header-image.jpg");
-  background-position: 0 0;
+  background-position: center center;
   background-repeat: no-repeat;
   background-color: $gray;
 
   &--inner {
     padding-top: 52px;
     padding-bottom: 57px;
-    background-position: 0 bottom;
+    background-position: center bottom;
   }
 
   img {
