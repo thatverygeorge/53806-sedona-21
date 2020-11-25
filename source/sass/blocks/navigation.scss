@@ -2,10 +2,30 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.navigation__item {
+  @media (min-width: $tablet-width) {
+    flex-basis: 19.92%;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
 }
 
 .navigation__item a {
   display: block;
+  width: 100%;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
@@ -13,4 +33,11 @@
   text-transform: uppercase;
   color: $white;
   background-color: $blue;
+  padding: 10px 45px 5px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    background-color: $white;
+    padding: 16px 5px 14px;
+  }
 }
