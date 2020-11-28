@@ -1,5 +1,15 @@
 .catalog {
+  max-width: 1200px;
+  margin: auto;
   padding: 31px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 0 0;
+  }
 }
 
 .catalog__title {
@@ -16,4 +26,17 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.catalog__gallery {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
 }
