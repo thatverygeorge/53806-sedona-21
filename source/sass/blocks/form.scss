@@ -1,10 +1,81 @@
-.form__fieldset {
-  border: none;
+.form {
   padding: 20px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__fieldset {
+  padding: 0;
+  margin-bottom: 40px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    &--introduction {
+      grid-column: 2 / -1;
+
+      .form__legend {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--contacts {
+      grid-column: 1 / -1;
+
+      @media (min-width: $desktop-width) {
+        .form__list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+    &--impression {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      .form__legend {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--attractions {
+      grid-column: 1 / -1;
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .form__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+
+        .form__list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    &--emotions {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .form__legend {
   margin: auto;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -24,6 +95,10 @@
 
   &--not-inline {
     flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -44,9 +119,9 @@
   color: $black;
 }
 
-
 .form__input-wrapper {
   display: flex;
+  flex-grow: 1;
 }
 
 .form__input {
@@ -84,4 +159,20 @@
 
 .form__submit {
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

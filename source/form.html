@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,9 +11,12 @@
 <body>
 
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип туристического городка Седона">
-    </a>
+    <div class="header__logo-wrapper">
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84"
+          alt="Логотип туристического городка Седона">
+      </a>
+    </div>
     <nav class="navigation header__navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -46,7 +50,7 @@
         Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
       <form class="form review__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--introduction">
           <legend class="form__legend">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -65,7 +69,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__legend">Контактная информация:</legend>
           <ul class="form__list">
             <li class="form__item form__item--not-inline">
@@ -87,7 +91,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--impression">
           <legend class="form__legend">Ваше общее впечатление:</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -108,7 +112,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--attractions">
           <legend class="form__legend">Посещенные достопримечательности:</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -134,12 +138,13 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--emotions">
           <legend class="form__legend">Опишите свои эмоции:</legend>
           <textarea class="form__input form__input--textarea" id="input-textarea" name="emotions"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="form__submit button" type="submit">Отправить отзыв</button>
+        <p class="form__required">* — обязательные поля</p>
       </form>
     </section>
   </main>

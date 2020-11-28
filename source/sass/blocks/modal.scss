@@ -1,6 +1,13 @@
 .modal {
   &--error {
+    max-width: 400px;
+    margin: auto;
     padding: 40px 20px 20px 20px;
+  }
+
+  &--success {
+    max-width: 640px;
+    margin: auto;
   }
 }
 
