@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,9 +11,12 @@
 <body>
 
   <header class="header">
-    <a class="header__logo">
-      <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип туристического городка Седона">
-    </a>
+    <div class="header__logo-wrapper">
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84"
+          alt="Логотип туристического городка Седона">
+      </a>
+    </div>
     <nav class="navigation header__navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -52,7 +56,8 @@
         </p>
       </div>
       <ul class="reasons__list">
-        <li class="advantage-item advantage-item--with-image advantage-item--with-decoration reasons__advantage-item">
+        <li
+          class="advantage-item advantage-item--with-image advantage-item--blue reasons__advantage-item reasons__advantage-item--with-image">
           <div class="advantage-item__wrapper">
             <p class="advantage-item__title">Настоящий городок</p>
             <p class="advantage-item__number">№1</p>
@@ -61,7 +66,8 @@
           <img class="advantage-item__image" src="https://via.placeholder.com/520x260" width="520" height="260"
             alt="Изображение ресторана в городке Седона">
         </li>
-        <li class="advantage-item advantage-item--with-image reasons__advantage-item">
+        <li
+          class="advantage-item advantage-item--with-image advantage-item--blue reasons__advantage-item reasons__advantage-item--with-image">
           <div class="advantage-item__wrapper">
             <p class="advantage-item__title">Там есть Мост дьявола</p>
             <p class="advantage-item__number">№2</p>
