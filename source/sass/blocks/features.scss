@@ -1,9 +1,10 @@
 .features__list {
-  padding: 35px 20px;
-  margin: 0;
+  padding: 35px 20px 9px;
+  margin: 0 auto;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -12,16 +13,102 @@
 .features__item {
   width: 100%;
   padding-left: 50px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--housing {
+    &::before {
+      top: -9px;
+      left: 1px;
+      width: 39px;
+      height: 37px;
+      background-image: url("../img/icon-house.svg");
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75px;
+        height: 72px;
+      }
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      top: -11px;
+      left: 5px;
+      width: 32px;
+      height: 38px;
+      background-image: url("../img/icon-gift.svg");
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 64px;
+        height: 75px;
+      }
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 1;
+    }
+
+    &::before {
+      top: -5px;
+      left: -2px;
+      width: 40px;
+      height: 35px;
+      background-image: url("../img/icon-burger.svg");
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        top: 63px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 76px;
+        height: 68px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    min-height: 330px;
     text-align: center;
+    padding-top: 158px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.features__description {
+  margin: 0;
+  text-transform: uppercase;
 }

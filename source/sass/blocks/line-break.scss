@@ -1,0 +1,21 @@
+.line-break {
+  display: none;
+
+  &--small {
+    @media (max-width: $mobile-width-only) {
+      display: inline;
+    }
+  }
+
+  &--medium {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      display: inline;
+    }
+  }
+
+  &--big {
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+}

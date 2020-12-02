@@ -1,0 +1,8 @@
+.body-wrapper {
+  max-width: 1200px;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba($dark-for-body-shadow, 0.2);
+  }
+}

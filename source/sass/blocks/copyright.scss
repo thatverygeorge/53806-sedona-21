@@ -1,12 +1,32 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .copyright__text {
-  margin-right: 8px;
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 12px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: $black;
+}
+
+.copyright__link {
+  display: flex;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $blue;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
 }
