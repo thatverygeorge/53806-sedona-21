@@ -1,27 +1,90 @@
 .modal {
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba($dark-for-body-shadow, 0.15);
+
   &--error {
     max-width: 400px;
     margin: auto;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 40px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 49px;
+    }
+
+    .modal__description {
+      margin: 0;
+      margin-bottom: 22px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 37px;
+      }
+    }
+
+    .modal__close {
+      width: 180px;
+      margin-bottom: 15px;
+
+      @media (min-width: $tablet-width) {
+        width: 272px;
+        margin-bottom: 29px;
+      }
+    }
   }
 
   &--success {
     max-width: 640px;
     margin: auto;
+
+    .modal__description {
+      margin: 0;
+      margin-bottom: 29px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 43px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 42px;
+      }
+    }
   }
 }
 
 .modal__wrapper {
-  padding: 30px 20px 20px 20px;
+  padding: 38px 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+  }
 }
 
 .modal__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .modal__description {
@@ -34,14 +97,13 @@
 .modal__button-wrapper {
   padding: 20px;
   background-color: $light-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
 }
 
 .modal__close {
   font-size: 18px;
   line-height: 26px;
-}
-
-.modal--error .modal__close {
-  width: 180px;
-  margin-bottom: 15px;
 }

@@ -62,16 +62,34 @@
   background-repeat: no-repeat;
   background-color: $gray;
 
-  &--inner {
-    padding-top: 52px;
-    padding-bottom: 57px;
-    background-position: 50% 100%;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 518px;
     margin-top: 0;
     padding-top: 77px;
     padding-bottom: 91px;
+  }
+
+  &--inner {
+    min-height: 158px;
+    padding-top: 52px;
+    padding-bottom: 67px;
+    padding-left: 45px;
+    padding-right: 46px;
+    background-position: 50% 100%;
+    background-size: 902px 389px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 290px;
+      padding-top: 95px;
+      padding-bottom: 117px;
+      background-size: 1200px 518px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 301px;
+      padding-top: 101px;
+      padding-bottom: 120px;
+      background-size: 1200px 518px;
+    }
   }
 }
