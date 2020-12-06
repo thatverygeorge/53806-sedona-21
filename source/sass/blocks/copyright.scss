@@ -19,13 +19,13 @@
 
   &:hover,
   &:focus {
-    path {
+    .copyright__icon {
       fill: $blue;
     }
   }
 
   &:active {
-    path {
+    .copyright__icon {
       opacity: 0.3;
     }
   }
