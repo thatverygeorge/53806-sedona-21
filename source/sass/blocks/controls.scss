@@ -1,0 +1,12 @@
+.controls {
+  .controls__progress {
+    margin: auto;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      margin-left: 93px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
