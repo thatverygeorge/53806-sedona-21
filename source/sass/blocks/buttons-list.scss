@@ -1,8 +1,79 @@
 .buttons-list {
-  width: 280px;
+  width: 87.5%;
+  height: 66px;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px 23px 10px 25px;
   list-style: none;
   background-color: $light-gray;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 93px;
+    background-color: rgba($black, 0.6);
+  }
+}
+
+.buttons-list__item {
+  display: flex;
+  cursor: pointer;
+
+  &--repeat {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+    margin-left: auto;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 31px;
+  }
+
+  svg {
+    @media (min-width: $tablet-width) {
+      fill: $white;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &:hover,
+    &:focus {
+      svg {
+        fill: $dark;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $dark;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      svg {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
 }
