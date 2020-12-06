@@ -1,6 +1,7 @@
 .modal {
   background-color: $white;
   box-shadow: 0 7px 15px rgba($dark-for-body-shadow, 0.15);
+  display: none;
 
   &--error {
     max-width: 400px;
