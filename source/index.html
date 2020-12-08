@@ -15,7 +15,11 @@
     <header class="header">
       <div class="header__logo-wrapper">
         <a class="header__logo">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип туристического городка Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип туристического городка Седона">
+          </picture>
         </a>
       </div>
       <nav class="navigation navigation--no-js header__navigation">
@@ -38,7 +42,7 @@
         </button>
       </nav>
       <div class="header__image">
-        <img src="img/header-text.svg" width="461" height="350"
+        <img src="img/header-text.svg" width="282" height="214"
           alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»">
       </div>
     </header>
@@ -67,8 +71,16 @@
                 Седона не аттракцион для туристов,<br class="line-break line-break--big"> там течет своя жизнь
               </p>
             </div>
-            <img class="advantage-item__image" src="img/photo-city.jpg" width="520" height="260"
-              alt="Изображение ресторана в городке Седона">
+            <div class="advantage-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantage-item__image" src="img/photo-city-mobile.jpg"
+                  srcset="img/photo-city-mobile@2x.jpg 2x" alt="Изображение ресторана в городке Седона">
+              </picture>
+            </div>
           </li>
           <li
             class="advantage-item advantage-item--with-image advantage-item--blue reasons__advantage-item reasons__advantage-item--with-image">
@@ -79,8 +91,16 @@
                 Да, по нему можно пройти!<br class="line-break line-break--big"> Если вы осмелитесь, конечно
               </p>
             </div>
-            <img class="advantage-item__image" src="img/photo-bridge.jpg" width="520" height="260"
-              alt="Изображение Моста Дьявола в городке Седона">
+            <div class="advantage-item__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantage-item__image" src="img/photo-bridge-mobile.jpg"
+                  srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Изображение Моста Дьявола в городке Седона">
+              </picture>
+            </div>
           </li>
           <li class="advantage-item reasons__advantage-item advantage-item--with-border">
             <div class="advantage-item__wrapper">

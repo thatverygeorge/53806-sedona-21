@@ -62,8 +62,29 @@
   width: 100%;
   height: 350px;
   margin: auto;
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map-mobile.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: $gray;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
 }
