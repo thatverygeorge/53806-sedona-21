@@ -3,8 +3,11 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -23,12 +26,33 @@ const styles = () => {
 
 exports.styles = styles;
 
+// WebP
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+}
+
+exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+}
+
+exports.sprite = sprite;
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "source"
     },
     cors: true,
     notify: false,
