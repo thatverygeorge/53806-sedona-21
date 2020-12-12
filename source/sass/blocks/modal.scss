@@ -2,7 +2,7 @@
   background-color: $white;
   box-shadow: 0 7px 15px rgba($dark-for-body-shadow, 0.15);
   display: none;
-  z-index: 99999999;
+  z-index: 99;
 
   &--show {
     display: block;
