@@ -14,8 +14,12 @@
 
     <header class="header">
       <div class="header__logo-wrapper">
-        <a class="header__logo" href="index.html">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип туристического городка Седона">
+        <a class="header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип туристического городка Седона">
+          </picture>
         </a>
       </div>
       <nav class="navigation navigation--no-js header__navigation">
@@ -38,7 +42,7 @@
         </button>
       </nav>
       <div class="header__image header__image--inner">
-        <img src="img/header-text--inner.svg" width="461" height="80"
+        <img src="img/header-text--inner.svg" width="229" height="39"
           alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»">
       </div>
     </header>
@@ -58,8 +62,15 @@
         <ul class="gallery catalog__gallery">
           <li class="photo-card gallery__item">
             <a class="photo-card__link" href="">
-              <img class="photo-card__image" src="img/catalog-photo-1.jpg" width="280" height="280"
-                alt="Фотография дороги, уходящей в даль, сделанная на закате">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-photo-1-desktop.jpg 1x, img/catalog-photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-photo-1-tablet.jpg 1x, img/catalog-photo-1-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog-photo-1-mobile.jpg"
+                  srcset="img/catalog-photo-1-mobile@2x.jpg 2x"
+                  alt="Фотография дороги, уходящей в даль, сделанная на закате">
+              </picture>
             </a>
             <div class="photo-card__wrapper">
               <h3 class="photo-card__title">Неродные просторы</h3>
@@ -75,8 +86,14 @@
           </li>
           <li class="photo-card gallery__item">
             <a class="photo-card__link" href="">
-              <img class="photo-card__image" src="img/catalog-photo-2.jpg" width="280" height="280"
-                alt="Фотография кактуса крупным планом">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-photo-2-desktop.jpg 1x, img/catalog-photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-photo-2-tablet.jpg 1x, img/catalog-photo-2-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog-photo-2-mobile.jpg"
+                  srcset="img/catalog-photo-2-mobile@2x.jpg 2x" alt="Фотография кактуса крупным планом">
+              </picture>
             </a>
             <div class="photo-card__wrapper">
               <h3 class="photo-card__title">Местная растительность</h3>
@@ -92,8 +109,15 @@
           </li>
           <li class="photo-card gallery__item">
             <a class="photo-card__link" href="">
-              <img class="photo-card__image" src="img/catalog-photo-3.jpg" width="280" height="280"
-                alt="Фотография извилистой горной дороги, окружённой деревьями">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-photo-3-desktop.jpg 1x, img/catalog-photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-photo-3-tablet.jpg 1x, img/catalog-photo-3-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog-photo-3-mobile.jpg"
+                  srcset="img/catalog-photo-3-mobile@2x.jpg 2x"
+                  alt="Фотография извилистой горной дороги, окружённой деревьями">
+              </picture>
             </a>
             <div class="photo-card__wrapper">
               <h3 class="photo-card__title">Дорога на север</h3>
@@ -109,8 +133,14 @@
           </li>
           <li class="photo-card gallery__item">
             <a class="photo-card__link" href="">
-              <img class="photo-card__image" src="img/catalog-photo-4.jpg" width="280" height="280"
-                alt="Фотография Моста дьявола">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-photo-4-desktop.jpg 1x, img/catalog-photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-photo-4-tablet.jpg 1x, img/catalog-photo-4-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/catalog-photo-4-mobile.jpg"
+                  srcset="img/catalog-photo-4-mobile@2x.jpg 2x" alt="Фотография Моста дьявола">
+              </picture>
             </a>
             <div class="photo-card__wrapper">
               <h3 class="photo-card__title">Мост дьявола</h3>
@@ -138,8 +168,14 @@
           </p>
         </div>
         <div class="video presentation__video">
-          <img class="video__thumbnail" src="img/video-thumbnail.jpg" width="320" height="201"
-            alt="Превью ролика с машинами на дороге посреди каньона">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/video-thumbnail-desktop.jpg 1x, img/video-thumbnail-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/video-thumbnail-tablet.jpg 1x, img/video-thumbnail-tablet@2x.jpg 2x">
+            <img class="video__thumbnail" src="img/video-thumbnail-mobile.jpg"
+              srcset="img/video-thumbnail-mobile@2x.jpg 2x" alt="Превью ролика с машинами на дороге посреди каньона">
+          </picture>
           <div class="controls video__controls">
             <div class="progress controls__progress">
               <div class="progress__bar"></div>
