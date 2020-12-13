@@ -10,6 +10,10 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 66px;
   }
+
+  iframe {
+    display: none;
+  }
 }
 
 .review__header-wrapper {
