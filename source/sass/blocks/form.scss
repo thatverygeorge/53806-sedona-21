@@ -492,34 +492,9 @@
   height: 58px;
   flex-shrink: 0;
   background-color: $light-gray-for-icon;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-
-  &--phone {
-    &::before {
-      width: 18px;
-      height: 18px;
-      top: 20px;
-      left: 21px;
-      background-image: url("../img/icon-phone.svg");
-    }
-  }
-
-  &--email {
-    &::before {
-      width: 16px;
-      height: 12px;
-      top: 23px;
-      left: 21px;
-      background-image: url("../img/icon-email.svg");
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__submit {

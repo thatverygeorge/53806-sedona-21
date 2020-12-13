@@ -21,36 +21,6 @@
   width: 46px;
   height: 48px;
   background-color: $blue;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 46px;
-    height: 48px;
-    top: 0;
-    left: 0;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
-
-  &--twitter {
-    &::before {
-      background-image: url("../img/icon-twitter.svg");
-    }
-  }
-
-  &--facebook {
-    &::before {
-      background-image: url("../img/icon-facebook.svg");
-    }
-  }
-
-  &--youtube {
-    &::before {
-      background-image: url("../img/icon-youtube.svg");
-    }
-  }
 
   &:hover,
   &:focus {
@@ -60,7 +30,7 @@
   &:active {
     background-color: $blue-for-active;
 
-    &::before {
+    .social__icon {
       opacity: 0.3;
     }
   }
