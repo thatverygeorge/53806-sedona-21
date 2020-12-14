@@ -58,7 +58,7 @@ exports.scripts = scripts;
 const images = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
+      imagemin.mozjpeg({quality: 90, progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
@@ -70,9 +70,9 @@ exports.images = images;
 // WebP
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/content/**/*.{jpg,png}")
+    .pipe(webp({quality: 85}))
+    .pipe(gulp.dest("build/img/content"));
 }
 
 exports.createWebp = createWebp;
