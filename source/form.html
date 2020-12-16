@@ -16,7 +16,7 @@
 
     <header class="header">
       <div class="header__logo-wrapper">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -57,7 +57,7 @@
           <h2 class="review__title">Оставьте свой отзыв</h2>
           <p class="review__description">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них,
-            <br class="line-break line-break--small line-break--medium line-break--big">
+            <br class="line-break line-break--medium line-break--big">
             а также о посещенных вами достопримечательностях
           </p>
         </div>
@@ -66,16 +66,16 @@
             <fieldset class="form__fieldset form__fieldset--introduction">
               <legend class="form__legend">Представьтесь:</legend>
               <ul class="form__list">
-                <li class="form__item">
+                <li class="form__item form__item--name">
                   <label class="form__label" for="input-name">Имя*:</label>
                   <input class="form__input" id="input-name" type="text" name="name" placeholder="Петр" required>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--surname">
                   <label class="form__label" for="input-surname">Фамилия*:</label>
                   <input class="form__input" id="input-surname" type="text" name="surname" placeholder="Иванов"
                     required>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--patronymic">
                   <label class="form__label" for="input-patronymic">Отчество:</label>
                   <input class="form__input" id="input-patronymic" type="text" name="patronymic"
                     placeholder="Александрович">
@@ -88,7 +88,7 @@
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend">Контактная информация:</legend>
               <ul class="form__list">
-                <li class="form__item form__item--not-inline">
+                <li class="form__item form__item--not-inline form__item--phone">
                   <label class="form__label" for="input-phone"><span>Контактный</span> телефон*:</label>
                   <div class="form__input-wrapper">
                     <input class="form__input" id="input-phone" type="tel" name="phone"
@@ -100,7 +100,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="form__item form__item--not-inline">
+                <li class="form__item form__item--not-inline form__item--email">
                   <label class="form__label" for="input-email">Электронная почта*:</label>
                   <div class="form__input-wrapper">
                     <input class="form__input" id="input-email" type="email" name="email" placeholder="Введите e-mail"
@@ -148,22 +148,22 @@
                 <li class="form__item">
                   <input class="form__input form__input--checkbox visually-hidden" id="attractions-devils-bridge"
                     type="checkbox" name="devils-bridge" checked>
-                  <label class="form__label" for="attractions-devils-bridge">Мост Дьявола</label>
+                  <label class="form__label" for="attractions-devils-bridge">Мост&nbsp;Дьявола</label>
                 </li>
                 <li class="form__item">
                   <input class="form__input form__input--checkbox visually-hidden" id="attractions-bell-mountain"
                     type="checkbox" name="bell-mountain" checked>
-                  <label class="form__label" for="attractions-bell-mountain">Гора-Колокол</label>
+                  <label class="form__label" for="attractions-bell-mountain">Гора&#8209;Колокол</label>
                 </li>
                 <li class="form__item">
                   <input class="form__input form__input--checkbox visually-hidden" id="attractions-slide-park"
                     type="checkbox" name="slide-park" checked>
-                  <label class="form__label" for="attractions-slide-park">Слайд-парк</label>
+                  <label class="form__label" for="attractions-slide-park">Слайд&#8209;парк</label>
                 </li>
                 <li class="form__item">
                   <input class="form__input form__input--checkbox visually-hidden" id="attractions-red-rocks"
                     type="checkbox" name="red-rocks">
-                  <label class="form__label" for="attractions-red-rocks">Красные скалы</label>
+                  <label class="form__label" for="attractions-red-rocks">Красные&nbsp;скалы</label>
                 </li>
               </ul>
             </fieldset>

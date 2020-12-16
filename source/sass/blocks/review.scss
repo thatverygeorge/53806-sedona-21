@@ -4,7 +4,7 @@
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 61px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,17 +20,17 @@
   padding: 36px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 60px 0;
+    padding: 61px 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 114px 120px 0;
+    padding: 112px 120px 0;
   }
 }
 
 .review__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -40,23 +40,23 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
   }
 }
 
 .review__description {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 73px;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }

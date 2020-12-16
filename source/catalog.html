@@ -16,7 +16,7 @@
 
     <header class="header">
       <div class="header__logo-wrapper">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -62,7 +62,7 @@
           </p>
         </div>
         <ul class="gallery catalog__gallery">
-          <li class="photo-card gallery__item">
+          <li class="photo-card photo-card--big gallery__item gallery__item--big">
             <a class="photo-card__link" href="">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
@@ -189,8 +189,10 @@
           <p class="presentation__title">Все еще сомневаетесь?</p>
           <p class="presentation__description">
             Смотрите видеопрезентацию и скорее за билетами, пока они
-            <br class="line-break line-break--small line-break--medium line-break--big">
-            не подорожали в очередной раз!
+            <br class="line-break line-break--medium line-break--big">
+            не
+            <br class="line-break line-break--small">
+            подорожали в очередной раз!
           </p>
         </div>
         <div class="video presentation__video">
@@ -213,20 +215,22 @@
           <div class="controls video__controls">
             <div class="progress controls__progress">
               <div class="progress__bar"></div>
-              <div class="progress__toggle" tabindex="1"></div>
+              <div class="progress__toggle" tabindex="0">
+                <span class="visually-hidden">Управление прогрессом ролика</span>
+              </div>
             </div>
             <ul class="buttons-list controls__buttons-list">
-              <li class="buttons-list__item buttons-list__item--replay" tabindex="1">
+              <li class="buttons-list__item buttons-list__item--replay" tabindex="0">
                 <svg width="16" height="20" fill="#5C6870" role="img" aria-label="Повторить">
                   <use xlink:href="img/sprite.svg#icon-replay"></use>
                 </svg>
               </li>
-              <li class="buttons-list__item buttons-list__item--subtitles" tabindex="1">
+              <li class="buttons-list__item buttons-list__item--subtitles" tabindex="0">
                 <svg width="32" height="20" fill="#5C6870" role="img" aria-label="Субтитры">
                   <use xlink:href="img/sprite.svg#icon-subtitles"></use>
                 </svg>
               </li>
-              <li class="buttons-list__item buttons-list__item--fullscreen" tabindex="1">
+              <li class="buttons-list__item buttons-list__item--fullscreen" tabindex="0">
                 <svg width="20" height="20" fill="#5C6870" role="img" aria-label="Во весь экран">
                   <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
                 </svg>
