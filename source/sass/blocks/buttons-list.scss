@@ -31,6 +31,12 @@
   &--subtitles {
     margin-left: auto;
   }
+
+  &--replay {
+    @media (min-width: $tablet-width) {
+      margin-top: -1px;
+    }
+  }
 }
 
 .buttons-list__button {
@@ -41,16 +47,9 @@
   cursor: pointer;
   background-color: transparent;
 
-  &--replay {
-    @media (min-width: $tablet-width) {
-      margin-top: -1px;
-    }
-  }
-
   &--subtitles {
     width: 32px;
     height: 20px;
-    margin-left: auto;
   }
 
   &--fullscreen {
