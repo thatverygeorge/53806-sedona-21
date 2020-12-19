@@ -189,11 +189,13 @@
       }
 
       @media (min-width: $desktop-width) {
+        max-width: 400px;
         margin-bottom: 15px;
         flex-grow: 1;
 
         &:nth-child(2n) {
-          margin-left: 79px;
+          max-width: 480px;
+          margin-left: 80px;
         }
       }
     }
@@ -256,8 +258,8 @@
         width: 100%;
         padding-left: 0;
         padding-right: 3px;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(4, min-content);
+        column-gap: 69px;
       }
     }
 
@@ -287,15 +289,10 @@
 
       @media (min-width: $desktop-width) {
         width: min-content;
-        margin-right: 69px;
       }
 
       &:last-child {
         margin-bottom: 0;
-      }
-
-      &:nth-child(4n) {
-        margin-right: 0;
       }
     }
   }
@@ -406,6 +403,7 @@
 .form__input-wrapper {
   display: flex;
   flex-grow: 1;
+  align-items: flex-start;
 }
 
 .form__input {
