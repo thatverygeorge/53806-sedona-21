@@ -34,6 +34,13 @@
   transform: translateX(-50%);
   display: flex;
   z-index: 99;
+
+  img {
+    @media (min-width: $desktop-width) {
+      width: 187px;
+      height: 97px;
+    }
+  }
 }
 
 .header__navigation {
@@ -57,7 +64,7 @@
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-color: $gray;
+  background-color: $dark-green;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-header-mobile@2x.jpg");

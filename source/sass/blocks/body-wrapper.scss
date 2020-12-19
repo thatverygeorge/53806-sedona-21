@@ -1,6 +1,7 @@
 .body-wrapper {
   background-color: $white;
   max-width: 1200px;
+  min-width: 320px;
   margin: auto;
 
   @media (min-width: $desktop-width) {

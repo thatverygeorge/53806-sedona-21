@@ -1,21 +1,23 @@
 .hotels {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .hotels__wrapper {
-  max-width: 100%;
+  width: 100%;
   margin: auto;
-  padding: 33px 20px;
+  padding: 31px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 55px;
   }
 }
 
 .hotels__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -25,36 +27,36 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 34px;
   }
 }
 
 .hotels__descritpion {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 }
 
 .hotels__find {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   max-width: 458px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 }
 

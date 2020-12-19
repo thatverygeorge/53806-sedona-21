@@ -16,11 +16,11 @@
 
     <header class="header">
       <div class="header__logo-wrapper">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Логотип туристического городка Седона">
+            <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип туристического городка Седона">
           </picture>
         </a>
       </div>
@@ -62,7 +62,7 @@
           </p>
         </div>
         <ul class="gallery catalog__gallery">
-          <li class="photo-card gallery__item">
+          <li class="photo-card photo-card--big gallery__item gallery__item--big">
             <a class="photo-card__link" href="">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
@@ -76,7 +76,7 @@
                   srcset="img/content/catalog-photo-1-desktop.jpg 1x, img/content/catalog-photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/content/catalog-photo-1-tablet.jpg 1x, img/content/catalog-photo-1-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/content/catalog-photo-1-mobile.jpg"
+                <img class="photo-card__image" width="280" height="280" src="img/content/catalog-photo-1-mobile.jpg"
                   srcset="img/content/catalog-photo-1-mobile@2x.jpg 2x"
                   alt="Фотография дороги, уходящей в даль, сделанная на закате">
               </picture>
@@ -106,7 +106,7 @@
                   srcset="img/content/catalog-photo-2-desktop.jpg 1x, img/content/catalog-photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/content/catalog-photo-2-tablet.jpg 1x, img/content/catalog-photo-2-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/content/catalog-photo-2-mobile.jpg"
+                <img class="photo-card__image" width="280" height="280" src="img/content/catalog-photo-2-mobile.jpg"
                   srcset="img/content/catalog-photo-2-mobile@2x.jpg 2x" alt="Фотография кактуса крупным планом">
               </picture>
             </a>
@@ -135,7 +135,7 @@
                   srcset="img/content/catalog-photo-3-desktop.jpg 1x, img/content/catalog-photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/content/catalog-photo-3-tablet.jpg 1x, img/content/catalog-photo-3-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/content/catalog-photo-3-mobile.jpg"
+                <img class="photo-card__image" width="280" height="280" src="img/content/catalog-photo-3-mobile.jpg"
                   srcset="img/content/catalog-photo-3-mobile@2x.jpg 2x"
                   alt="Фотография извилистой горной дороги, окружённой деревьями">
               </picture>
@@ -165,7 +165,7 @@
                   srcset="img/content/catalog-photo-4-desktop.jpg 1x, img/content/catalog-photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/content/catalog-photo-4-tablet.jpg 1x, img/content/catalog-photo-4-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/content/catalog-photo-4-mobile.jpg"
+                <img class="photo-card__image" width="280" height="280" src="img/content/catalog-photo-4-mobile.jpg"
                   srcset="img/content/catalog-photo-4-mobile@2x.jpg 2x" alt="Фотография Моста дьявола">
               </picture>
             </a>
@@ -189,8 +189,10 @@
           <p class="presentation__title">Все еще сомневаетесь?</p>
           <p class="presentation__description">
             Смотрите видеопрезентацию и скорее за билетами, пока они
-            <br class="line-break line-break--small line-break--medium line-break--big">
-            не подорожали в очередной раз!
+            <br class="line-break line-break--medium line-break--big">
+            не
+            <br class="line-break line-break--small">
+            подорожали в очередной раз!
           </p>
         </div>
         <div class="video presentation__video">
@@ -206,30 +208,38 @@
               srcset="img/content/video-thumbnail-desktop.jpg 1x, img/content/video-thumbnail-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/content/video-thumbnail-tablet.jpg 1x, img/content/video-thumbnail-tablet@2x.jpg 2x">
-            <img class="video__thumbnail" src="img/content/video-thumbnail-mobile.jpg"
+            <img class="video__thumbnail" width="320" height="201" src="img/content/video-thumbnail-mobile.jpg"
               srcset="img/content/video-thumbnail-mobile@2x.jpg 2x"
               alt="Превью ролика с машинами на дороге посреди каньона">
           </picture>
           <div class="controls video__controls">
             <div class="progress controls__progress">
               <div class="progress__bar"></div>
-              <div class="progress__toggle" tabindex="1"></div>
+              <div class="progress__toggle" tabindex="0">
+                <span class="visually-hidden">Управление прогрессом ролика</span>
+              </div>
             </div>
             <ul class="buttons-list controls__buttons-list">
-              <li class="buttons-list__item buttons-list__item--replay" tabindex="1">
-                <svg width="16" height="20" fill="#5C6870" role="img" aria-label="Повторить">
-                  <use xlink:href="img/sprite.svg#icon-replay"></use>
-                </svg>
+              <li class="buttons-list__item buttons-list__item--replay">
+                <button class="buttons-list__button buttons-list__button--replay" aria-label="Повторить">
+                  <svg width="16" height="20" fill="#5C6870">
+                    <use xlink:href="img/sprite.svg#icon-replay"></use>
+                  </svg>
+                </button>
               </li>
-              <li class="buttons-list__item buttons-list__item--subtitles" tabindex="1">
-                <svg width="32" height="20" fill="#5C6870" role="img" aria-label="Субтитры">
-                  <use xlink:href="img/sprite.svg#icon-subtitles"></use>
-                </svg>
+              <li class="buttons-list__item buttons-list__item--subtitles">
+                <button class="buttons-list__button buttons-list__button--subtitles" aria-label="Субтитры">
+                  <svg width="32" height="20" fill="#5C6870">
+                    <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                  </svg>
+                </button>
               </li>
-              <li class="buttons-list__item buttons-list__item--fullscreen" tabindex="1">
-                <svg width="20" height="20" fill="#5C6870" role="img" aria-label="Во весь экран">
-                  <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
-                </svg>
+              <li class="buttons-list__item buttons-list__item--fullscreen">
+                <button class="buttons-list__button buttons-list__button--subtitles" aria-label="Во весь экран">
+                  <svg width="20" height="20" fill="#5C6870">
+                    <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
