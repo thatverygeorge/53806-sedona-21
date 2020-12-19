@@ -85,7 +85,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
   }
 
@@ -189,13 +189,14 @@
       }
 
       @media (min-width: $desktop-width) {
-        margin-bottom: 0;
-        margin-right: 79px;
+        max-width: 400px;
+        margin-bottom: 15px;
         flex-grow: 1;
-      }
 
-      &:last-child {
-        margin: 0;
+        &:nth-child(2n) {
+          max-width: 480px;
+          margin-left: 80px;
+        }
       }
     }
 
@@ -257,9 +258,8 @@
         width: 100%;
         padding-left: 0;
         padding-right: 3px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        grid-template-columns: repeat(4, min-content);
+        column-gap: 69px;
       }
     }
 
@@ -403,6 +403,7 @@
 .form__input-wrapper {
   display: flex;
   flex-grow: 1;
+  align-items: flex-start;
 }
 
 .form__input {
@@ -420,6 +421,7 @@
 
   &::placeholder {
     opacity: 1;
+    color: $black;
   }
 
   &--radio + .form__label {
