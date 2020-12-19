@@ -85,7 +85,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
   }
 
@@ -189,13 +189,12 @@
       }
 
       @media (min-width: $desktop-width) {
-        margin-bottom: 0;
-        margin-right: 79px;
+        margin-bottom: 15px;
         flex-grow: 1;
-      }
 
-      &:last-child {
-        margin: 0;
+        &:nth-child(2n) {
+          margin-left: 79px;
+        }
       }
     }
 
@@ -259,7 +258,6 @@
         padding-right: 3px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
       }
     }
 
@@ -289,10 +287,15 @@
 
       @media (min-width: $desktop-width) {
         width: min-content;
+        margin-right: 69px;
       }
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      &:nth-child(4n) {
+        margin-right: 0;
       }
     }
   }
@@ -420,6 +423,7 @@
 
   &::placeholder {
     opacity: 1;
+    color: $black;
   }
 
   &--radio + .form__label {

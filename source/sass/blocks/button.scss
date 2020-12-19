@@ -28,4 +28,19 @@
   &:disabled {
     background-color: $gray-for-disabled;
   }
+
+  &--disabled {
+    background-color: $gray-for-disabled;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      background-color: $gray-for-disabled;
+    }
+
+    &:active {
+      background-color: $gray-for-disabled;
+      color: rgba($white, 0.3);
+    }
+  }
 }
