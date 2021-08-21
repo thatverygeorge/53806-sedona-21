@@ -1282,6 +1282,8 @@ a {
     background-color: #ffffff;
     border-color: #e5e5e5;
     outline: none; }
+  .form__input:invalid:not(:focus) {
+    border-color: #ff0000; }
 
 .form__icon {
   width: 58px;

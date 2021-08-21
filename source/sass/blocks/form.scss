@@ -546,6 +546,10 @@
     border-color: $gray-for-disabled;
     outline: none;
   }
+
+  &:invalid:not(:focus) {
+    border-color: $red;
+  }
 }
 
 .form__icon {
